@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Product RecSys</title>
+        
+        <!-- Local CSS -->
+        <link href="{{ url_for('static', path='/homepage_style.css') }}" rel="stylesheet">
+
+        <!-- Semantic-ui -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+
+
+        <!-- Fotorama-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+        <!-- Responsive -->
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+    </head>
+<body>
+    <div class="ui container">
+        <div id="heading-block">
+            <h1>Product RecSys</h1>
+            <label>(A dummy app that recommends products using ML)</label>
+            <div>
+                {% block about %}
+                {% endblock %}
+            </div>
+        </div>
+            {% block trending %}
+            {% endblock %}
+        <div>
+            {% block item_rec %}
+            {% endblock %}
+        </div>
+        <div>
+            {% block user_rec %}
+            {% endblock %}
+        </div>
+    </div>
+</body>
+</html>

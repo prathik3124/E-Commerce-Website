@@ -1,0 +1,8 @@
+scikit-surprise
+pandas
+numpy
+fastapi
+pydantic
+sqlalchemy
+jinja2
+aiofiles
